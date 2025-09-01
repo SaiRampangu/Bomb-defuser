@@ -1,38 +1,42 @@
 .timer-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;  /* Center vertically */
-    align-items: center;      /* Center horizontally */
-    min-height: 100vh;        /* Fill full screen */
+    justify-content: center;  /* Vertically centered */
+    align-items: center;      /* Horizontally centered */
+    min-height: 100vh;        /* Full screen height */
     background-color: cadetblue;
-    margin: 0;                /* Remove margin gap */
-    padding: 0;               /* Remove extra padding */
+    margin: 0;
+    padding: 0;
+}
+
+.input-container {
+    width: 50%;         /* Take half of screen width */
+    max-width: 500px;   /* Don’t exceed 500px */
+    min-width: 250px;   /* Don’t shrink too small */
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    font-size: 22px;
 }
 
 .bomb-image {
-    width: 40%;        /* Scales relative to screen size */
-    max-width: 400px;  /* Won’t grow beyond 400px */
+    width: 60%;         /* Take 60% of screen width */
+    max-width: 600px;   /* Max size for desktop */
+    min-width: 200px;   /* Prevent too small on mobile */
     height: auto;
     margin-top: 20px;
 }
 
 .count-down {
-    font-size: 3rem;  /* Responsive text size */
+    font-size: clamp(2rem, 5vw, 4rem);  /* Responsive font size */
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     color: red;
     margin-top: 30px;
 }
 
-.input-container {
-    width: 80%;       /* More responsive */
-    max-width: 400px; /* Limit width */
-    height: 40px;
-    text-align: center;
-    border-radius: 10px;
-    border: none;
-    font-size: 20px;
-}
+
 
 
 
