@@ -19,6 +19,8 @@
 .bomb-image{
     width: 400px;
     margin-top: 20px;
+    max-width: 100%;
+    height: auto;
 }
 .count-down{
     font-size: 55px;
@@ -26,4 +28,5 @@
     font-weight: 700;
     color: red;
     margin-top: 30px;
+
 }
