@@ -2,7 +2,7 @@
 
 .input-container{
     width: 400px;
-    height: 40px;
+    height: 60px;
     text-align: center;
     border-radius: 10px;
     border-style: solid;
@@ -27,6 +27,7 @@
     color: red;
     margin-top: 30px;
 }
+
 
 
 
