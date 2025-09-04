@@ -29,7 +29,8 @@ userInputEl.addEventListener("keydown", function(event){
     if (event.key === "Enter" && userInputEl.value === "defuse" && minutes > 0){
         clearInterval(intervalId);
         timerEl.textContent = "Bomb defused successfully";
-        timerEl.style.color = red;
+        timerEl.style.color = green;
     }
 
 })
+
